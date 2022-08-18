@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { Testimony } from "./components/testimony/testimony.js";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>This is what some people say about learning javascript</h1>
+      <Testimony
+        name="Anna"
+        country="Canada"
+        image="emma"
+        position="Software Engineer"
+        business="Spotify"
+        testimonial="This job is amazing"
+      />
+      <Testimony
+        name="Lucas"
+        country="Suecia"
+        image="shawn"
+        position="Software Engineer"
+        business="Amazon"
+        testimonial="Learning Javascript is hard"
+      />
+      <Testimony
+        name="Cecilia"
+        country="Colombia"
+        image="sarah"
+        position="Dev"
+        business="Facebook"
+        testimonial="This job is amazing"
+      />
     </div>
   );
 }
